@@ -1,0 +1,22 @@
+[4.665s] Invoking command in '/home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description': PYTHONPATH=/home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description/build/w0x7ce_bot_description/prefix_override:/home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description/install/w0x7ce_bot_description/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base build/w0x7ce_bot_description build --build-base /home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description/build/w0x7ce_bot_description/build install --record /home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description/build/w0x7ce_bot_description/install.log --single-version-externally-managed
+[5.491s] running egg_info
+[5.492s] writing build/w0x7ce_bot_description/w0x7ce_bot_description.egg-info/PKG-INFO
+[5.493s] writing dependency_links to build/w0x7ce_bot_description/w0x7ce_bot_description.egg-info/dependency_links.txt
+[5.494s] writing entry points to build/w0x7ce_bot_description/w0x7ce_bot_description.egg-info/entry_points.txt
+[5.495s] writing requirements to build/w0x7ce_bot_description/w0x7ce_bot_description.egg-info/requires.txt
+[5.495s] writing top-level names to build/w0x7ce_bot_description/w0x7ce_bot_description.egg-info/top_level.txt
+[5.499s] reading manifest file 'build/w0x7ce_bot_description/w0x7ce_bot_description.egg-info/SOURCES.txt'
+[5.499s] writing manifest file 'build/w0x7ce_bot_description/w0x7ce_bot_description.egg-info/SOURCES.txt'
+[5.499s] running build
+[5.500s] running build_py
+[5.500s] running install
+[5.501s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.502s]   warnings.warn(
+[5.502s] running install_lib
+[5.507s] running install_data
+[5.517s] running install_egg_info
+[5.524s] removing '/home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description/install/w0x7ce_bot_description/lib/python3.10/site-packages/w0x7ce_bot_description-0.0.0-py3.10.egg-info' (and everything under it)
+[5.528s] Copying build/w0x7ce_bot_description/w0x7ce_bot_description.egg-info to /home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description/install/w0x7ce_bot_description/lib/python3.10/site-packages/w0x7ce_bot_description-0.0.0-py3.10.egg-info
+[5.532s] running install_scripts
+[5.703s] writing list of installed files to '/home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description/build/w0x7ce_bot_description/install.log'
+[5.867s] Invoked command in '/home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description' returned '0': PYTHONPATH=/home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description/build/w0x7ce_bot_description/prefix_override:/home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description/install/w0x7ce_bot_description/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base build/w0x7ce_bot_description build --build-base /home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description/build/w0x7ce_bot_description/build install --record /home/w0x7ce/Desktop/w0x7ce_bot/src/w0x7ce_bot_description/build/w0x7ce_bot_description/install.log --single-version-externally-managed

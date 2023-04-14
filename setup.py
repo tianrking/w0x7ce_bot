@@ -17,10 +17,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='w0x7ce',
-    maintainer_email='w0x7ce@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='root',
+    maintainer_email='me@w0x7ce.eu',
+    description='w0x7ce: Package description',
+    license='w0x7ce: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

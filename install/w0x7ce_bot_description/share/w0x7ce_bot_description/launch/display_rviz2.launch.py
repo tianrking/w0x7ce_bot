@@ -7,7 +7,7 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     package_name = 'w0x7ce_bot_description'
-    urdf_name = "w0x7ce_bot_base.urdf"
+    urdf_name = "w0x7ce_base.urdf"
 
     ld = LaunchDescription()
     pkg_share = FindPackageShare(package=package_name).find(package_name) 
@@ -38,4 +38,3 @@ def generate_launch_description():
     ld.add_action(rviz2_node)
 
     return ld
-
