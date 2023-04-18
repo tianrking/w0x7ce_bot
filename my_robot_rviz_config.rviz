@@ -1,0 +1,7 @@
+rviz_config:
+  - Class: rviz_plugins/TF
+    Enabled: true
+  - Class: rviz_plugins/RobotModel
+    Enabled: true
+    Robot Description: robot_description
+
