@@ -6,13 +6,13 @@ options = {
   map_builder = MAP_BUILDER,
   trajectory_builder = TRAJECTORY_BUILDER,
   map_frame = "map",
-  tracking_frame = "laser_frame",
-  published_frame = "laser_frame",
+  tracking_frame = "laser",
+  published_frame = "laser",
   -- tracking_frame = "horizontal_laser_link",
   -- published_frame = "horizontal_laser_link",
   odom_frame = "odom",
   -- true改为false，不用提供里程计数据
-  provide_odom_frame = true,
+  provide_odom_frame = false,
   -- false改为true，仅发布2D位资
   publish_frame_projected_to_2d = false,
   use_pose_extrapolator = true,
