@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot Control</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Robot Control</h1>
+    <div class="controls">
+      <label for="speed">Speed:</label>
+      <input type="range" id="speed" min="0" max="100" step="1">
+      <label for="angle">Angle:</label>
+      <input type="range" id="angle" min="-180" max="180" step="1">
+      <label for="auto">Auto:</label>
+      <input type="checkbox" id="auto">
+      <button id="send-command">Send Command</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
