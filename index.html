@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RTSP Stream</title>
+</head>
+<body>
+  <video id="video" autoplay></video>
+  <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/core@beta/dist/ffmpeg-core.browser.js"></script>
+  <script>
+    const video = document.getElementById("video");
+
+    async function start() {
+      await FFmpeg.isReady;
+
+      const ffmpeg = FFmpeg.createFFmpeg({
+        corePath: "https://cdn.jsdelivr.net/npm/@ffmpeg/core@beta/dist/ffmpeg-core.browser.js",
+        log: true,
+      });
+
+      const url = "ws://localhost:9999";
+      const ws = new WebSocket(url);
+
+      ws.binaryType = "arraybuffer";
+      ws.addEventListener("message", async (event) => {
+        const data = new Uint8Array(event.data);
+        await ffmpeg.write("input", data);
+        const { data: output } = await ffmpeg.read("output");
+        video.src = URL.createObjectURL(new Blob([output.buffer], { type: "video/mp4" }));
+        await ffmpeg.clear();
+      });
+
+      ws.addEventListener("open", async () => {
+        await ffmpeg.load();
+        await ffmpeg.run("-i", "input", "-c:v", "libx264", "-an", "-f", "mp4", "-movflags", "frag_keyframe+empty_moov", "-metadata", "title='stream'", "output");
+      });
+    }
+
+    start();
+  </script>
+</body>
+</html>
