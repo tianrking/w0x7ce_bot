@@ -24,4 +24,6 @@ python3 server.py
 
 Finally, navigate to the root directory of the application, where you will find the index.html file. Double-click on this file to open it in your default web browser.
 
+Or visit https://gpt.w0x7ce.eu/ROS/
+
 Our application allows you to control the speed and direction of a simulated object using the AWSD keys on your keyboard. 
