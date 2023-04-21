@@ -1,5 +1,7 @@
 body {
   font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
 }
 
 .container {
@@ -10,10 +12,55 @@ body {
 .controls {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
-label {
-  margin-bottom: 5px;
+input[type="range"] {
+  width: 100%;
+}
+
+/* Speed slider */
+#speed {
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+#speed::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: black;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#speed::-moz-range-thumb {
+  background: black;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Angle slider */
+#angle {
+  background: linear-gradient(90deg, blue 50%, green 50%);
+}
+
+#angle::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: black;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#angle::-moz-range-thumb {
+  background: black;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 

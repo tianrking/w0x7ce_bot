@@ -1,17 +1,21 @@
 const speedSlider = document.getElementById("speed");
 const angleSlider = document.getElementById("angle");
+const speedValue = document.getElementById("speed-value");
+const angleValue = document.getElementById("angle-value");
 const autoCheckbox = document.getElementById("auto");
 const sendButton = document.getElementById("send-command");
 
 let autoSendInterval;
 
 speedSlider.addEventListener("input", () => {
+  updateValueDisplay(speedValue, speedSlider.value);
   if (autoCheckbox.checked) {
     sendCommandAutomatically();
   }
 });
 
 angleSlider.addEventListener("input", () => {
+  updateValueDisplay(angleValue, angleSlider.value);
   if (autoCheckbox.checked) {
     sendCommandAutomatically();
   }
@@ -29,18 +33,21 @@ sendButton.addEventListener("click", () => {
   sendCommand();
 });
 
+function updateValueDisplay(element, value) {
+  element.textContent = value;
+}
+
 function sendCommandAutomatically() {
   clearInterval(autoSendInterval);
   autoSendInterval = setInterval(sendCommand, 200);
 }
 
-async function sendCommand() {
-  const speed = document.getElementById("speed").value;
-  const angle = document.getElementById("angle").value;
-  
-  // http://your-backend-server-url/api/control
+function sendCommand() {
+  const speed = speedSlider.value;
+  const angle = angleSlider.value;
+
   try {
-    const response = await fetch("http://127.0.0.1:5000/api/control", {
+    const response = fetch("http://192.168.32.129:5000/api/control", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -60,4 +67,8 @@ async function sendCommand() {
     console.error("Error sending command:", error);
   }
 }
+
+// Initialize value displays
+updateValueDisplay(speedValue, speedSlider.value);
+updateValueDisplay(angleValue, angleSlider.value);
 
