@@ -1,0 +1,16 @@
+[0.036s] Invoking command in '/home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer -- -j2 -l2
+[0.074s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.433s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.598s] [31mCMake Error at CMakeLists.txt:35 (install):
+[0.599s]   install does not recognize sub-command DESTINATION
+[0.599s] 
+[0.599s] [0m
+[0.614s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.619s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.620s] -- Added test 'lint_cmake' to check CMake code style
+[0.620s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.623s] -- Added test 'xmllint' to check XML markup files
+[0.624s] -- Configuring incomplete, errors occurred!
+[0.624s] See also "/home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer/CMakeFiles/CMakeOutput.log".
+[0.630s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.634s] Invoked command in '/home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer -- -j2 -l2

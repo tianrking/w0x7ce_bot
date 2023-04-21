@@ -1,0 +1,8 @@
+source;share/w0x7ce_cartographer/hook/cmake_prefix_path.ps1
+source;share/w0x7ce_cartographer/hook/cmake_prefix_path.dsv
+source;share/w0x7ce_cartographer/hook/cmake_prefix_path.sh
+source;share/w0x7ce_cartographer/local_setup.bash
+source;share/w0x7ce_cartographer/local_setup.dsv
+source;share/w0x7ce_cartographer/local_setup.ps1
+source;share/w0x7ce_cartographer/local_setup.sh
+source;share/w0x7ce_cartographer/local_setup.zsh

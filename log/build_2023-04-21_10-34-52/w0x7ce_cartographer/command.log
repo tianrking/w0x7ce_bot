@@ -1,0 +1,2 @@
+Invoking command in '/home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer -- -j2 -l2
+Invoked command in '/home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer -- -j2 -l2

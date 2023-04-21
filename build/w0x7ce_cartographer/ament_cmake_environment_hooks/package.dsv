@@ -1,0 +1,4 @@
+source;share/w0x7ce_cartographer/local_setup.bash
+source;share/w0x7ce_cartographer/local_setup.dsv
+source;share/w0x7ce_cartographer/local_setup.sh
+source;share/w0x7ce_cartographer/local_setup.zsh

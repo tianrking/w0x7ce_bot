@@ -1,0 +1,56 @@
+[0.000000] (-) TimerEvent: {}
+[0.002568] (w0x7ce_cartographer) JobQueued: {'identifier': 'w0x7ce_cartographer', 'dependencies': OrderedDict()}
+[0.003749] (w0x7ce_cartographer) JobStarted: {'identifier': 'w0x7ce_cartographer'}
+[0.048198] (w0x7ce_cartographer) JobProgress: {'identifier': 'w0x7ce_cartographer', 'progress': 'cmake'}
+[0.049393] (w0x7ce_cartographer) Command: {'cmd': ['/usr/bin/cmake', '/home/w0x7ce/Desktop/w0x7ce_bot_cool/w0x7ce_cartographer', '-DCMAKE_INSTALL_PREFIX=/home/w0x7ce/Desktop/w0x7ce_bot_cool/install/w0x7ce_cartographer'], 'cwd': '/home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'w0x7ce'), ('SSH_CLIENT', '192.168.32.1 61515 22'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/w0x7ce/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/w0x7ce/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/w0x7ce'), ('OLDPWD', '/home/w0x7ce/Desktop/cool_single_radar'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-cad61eac-01fa-41ed-b7bf-4949655dd955.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/w0x7ce/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'lzh_TW'), ('VSCODE_GIT_ASKPASS_NODE', '/home/w0x7ce/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'w0x7ce'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/w0x7ce/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/bin/remote-cli:/home/w0x7ce/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'lzh_TW'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'lzh_TW'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e1c3f5209e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.32.1 61515 192.168.32.129 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100939] (-) TimerEvent: {}
+[0.201646] (-) TimerEvent: {}
+[0.302289] (-) TimerEvent: {}
+[0.396993] (w0x7ce_cartographer) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.402585] (-) TimerEvent: {}
+[0.503326] (-) TimerEvent: {}
+[0.604034] (-) TimerEvent: {}
+[0.648960] (w0x7ce_cartographer) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.659726] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.704207] (-) TimerEvent: {}
+[0.805992] (-) TimerEvent: {}
+[0.907890] (-) TimerEvent: {}
+[0.928935] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.944859] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.945686] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.946664] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.956283] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.008303] (-) TimerEvent: {}
+[1.110457] (-) TimerEvent: {}
+[1.211306] (-) TimerEvent: {}
+[1.238238] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.253565] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.254439] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.255748] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.311626] (-) TimerEvent: {}
+[1.317917] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.411826] (-) TimerEvent: {}
+[1.512634] (-) TimerEvent: {}
+[1.613519] (-) TimerEvent: {}
+[1.714492] (-) TimerEvent: {}
+[1.779363] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[1.814643] (-) TimerEvent: {}
+[1.915501] (-) TimerEvent: {}
+[2.016344] (-) TimerEvent: {}
+[2.029696] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.116499] (-) TimerEvent: {}
+[2.194648] (w0x7ce_cartographer) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):\n'}
+[2.197203] (w0x7ce_cartographer) StderrLine: {'line': b"  ament_package_xml() package name 'w0x7ce_cartographer' in '/package.xml'\n"}
+[2.198360] (w0x7ce_cartographer) StderrLine: {'line': b"  does not match current PROJECT_NAME 'fishbot_cartographer'.  You must call\n"}
+[2.199436] (w0x7ce_cartographer) StderrLine: {'line': b'  project() with the same package name before.\n'}
+[2.200493] (w0x7ce_cartographer) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.201329] (w0x7ce_cartographer) StderrLine: {'line': b'  /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)\n'}
+[2.201502] (w0x7ce_cartographer) StderrLine: {'line': b'  CMakeLists.txt:32 (ament_lint_auto_find_test_dependencies)\n'}
+[2.201655] (w0x7ce_cartographer) StderrLine: {'line': b'\n'}
+[2.201803] (w0x7ce_cartographer) StderrLine: {'line': b'\x1b[0m\n'}
+[2.201954] (w0x7ce_cartographer) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.206142] (w0x7ce_cartographer) StdoutLine: {'line': b'See also "/home/w0x7ce/Desktop/w0x7ce_bot_cool/build/w0x7ce_cartographer/CMakeFiles/CMakeOutput.log".\n'}
+[2.206797] (w0x7ce_cartographer) CommandEnded: {'returncode': 1}
+[2.216765] (-) TimerEvent: {}
+[2.281638] (w0x7ce_cartographer) JobEnded: {'identifier': 'w0x7ce_cartographer', 'rc': 1}
+[2.292926] (-) EventReactorShutdown: {}
