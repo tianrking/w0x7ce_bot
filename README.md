@@ -4,7 +4,7 @@
 sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
 //OSError: libmpi_cxx.so.20: cannot open shared object file: No such file or directory
 sudo apt-get install libopenblas-base libopenmpi-dev 
-
+sudo apt install libomp-dev
 ```
 
 # installing CUDA-enabled torch
