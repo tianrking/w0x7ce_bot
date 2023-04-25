@@ -1,0 +1,7 @@
+-I/home/w0x7ce/Desktop/imu_tk/./include
+-I/usr/include
+-I/usr/include
+-I/home/w0x7ce/Desktop/imu_tk/build
+-o
+/home/w0x7ce/Desktop/imu_tk/build/include/imu_tk/vis_extra/moc_opengl_3d_scene.cxx
+/home/w0x7ce/Desktop/imu_tk/include/imu_tk/vis_extra/opengl_3d_scene.h
