@@ -53,6 +53,28 @@ cd src/w0x7ce_cartographer/ && mkdir map && cd map
 ros2 run nav2_map_server map_saver_cli -t map -f w0x7ce_map
 ```
 
+## Stuct
 
+```mermaid
+graph LR
+    RP2040 -- micro-ROS --> Docker((MicroROS-anget))
+    Docker --> RP2040
+    RP2040 -- PWM --> Servo[Servo]
+    RP2040 -- PWM --> Motor1[Motor 1]
+    Motor1 --> Encoder1[Encoder 1]
+    Encoder1 --> RP2040
+    RP2040 -- PWM --> Motor2[Motor 2]
+    Motor2 --> Encoder2[Encoder 2]
+    Encoder2 --> RP2040
+    Docker -- ROS2 --> JetsonNano_docker[Jetson Nano Docker]
+    JetsonNano_docker --> Docker
+    Radar[Radar] -- ROS2 --> JetsonNano_docker
+    Camera[Camera] -- DATA --> JetsonNano[Jetson Nano Host]
+    JetsonNano_docker --> JetsonNano
+    JetsonNano --> JetsonNano_docker 
+    JetsonNano_docker  -- ROS2 --> PC[PC]
+    PC  --> JetsonNano_docker
+
+```
 
 
