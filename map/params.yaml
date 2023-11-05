@@ -1,0 +1,39 @@
+amcl:
+  use_map_topic: true
+  scan_topic: "/scan"  # Assuming your radar publishes data to the /scan topic
+
+bt_navigator:
+  global_frame: map
+  robot_base_frame: base_link
+  use_sim_time: false
+  
+  global_costmap:
+    global_frame: map
+    robot_base_frame: base_link
+    update_frequency: 5.0
+    publish_frequency: 2.0
+    static_map: true
+    observation_sources: radar
+    radar:
+      data_type: "sensor_msgs/msg/LaserScan"
+      topic: "/scan"
+      marking: true
+      clearing: true
+      
+  local_costmap:
+    global_frame: map
+    robot_base_frame: base_link
+    update_frequency: 5.0
+    publish_frequency: 2.0
+    static_map: false
+    rolling_window: true
+    width: 3
+    height: 3
+    resolution: 0.05
+    observation_sources: radar
+    radar:
+      data_type: "sensor_msgs/msg/LaserScan"
+      topic: "/scan"
+      marking: true
+      clearing: true
+

@@ -53,6 +53,25 @@ cd src/w0x7ce_cartographer/ && mkdir map && cd map
 ros2 run nav2_map_server map_saver_cli -t map -f w0x7ce_map
 ```
 
+# nav2
+
+ros2 launch nav2_map_server map_saver_server.launch.py yaml_filename:=/home/w0x7ce/Desktop/w0x7ce_bot/map/w0x7ce_map.yaml 
+
+ros2 launch nav2_bringup localization_launch.py map:=/home/w0x7ce/Desktop/w0x7ce_bot/map/w0x7ce_map.yaml
+
+ros2 launch nav2_bringup navigation_launch.py map:=/home/w0x7ce/Desktop/w0x7ce_bot/map/w0x7ce_map.yaml use_sim_time:=false
+
+ros2 launch slam_toolbox online_sync_launch.py
+
+ros2 launch my_robot_launch.py
+
+
+# debug
+
+ros2 action send_goal /navigate_to_pose nav2_msgs/action/NavigateToPose "pose: { header: { frame_id: 'map' }, pose: { position: { x: 1, y: 1, z: 0.0 }, orientation: { x: 0.0, y: 0.0, z: 0.0, w: 1.0 }}}"
+
+ros2 topic echo /cmd_vel
+
 ## Stuct
 
 ```mermaid
